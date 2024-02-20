@@ -3,6 +3,7 @@ const openButton = document.getElementById("openButton");
 const closeButton = document.getElementById("closeButton");
 const songsContainer = document.querySelector(".secondSection__demoSongs");
 const songsContainerDemo = document.querySelector(".firstSection__demoSongs");
+const playSongs = document.querySelectorAll(".firstSection__h3--demoSong");
 
 const songs = [
 
@@ -78,6 +79,16 @@ const printSongsDemo = (container, array) => {
        `
     });
 }
+
+playSongs.forEach(playSong => {
+  playSong.addEventListener("click", (event) => {
+    event.target.style.color = 'black';
+  });
+
+  // playSong.addEventListener("mouseout", function(event) {
+  //   event.target.style.color = 'white';
+  // });
+});
 
 document.addEventListener("DOMContentLoaded", () =>{
     printSongs(songsContainer, songs);
