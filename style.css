@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Murecho", sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.firstSection {
+    background-image: url(/images/background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.firstSection__header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 1.875rem 5rem;
+}
+
+.firstSection__strong--header {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.firstSection__button-header{
+  background-color: transparent;
+  border: none;
+}
+
+.firstSection__hamburguer--button{
+    width: 30px;
+    display: none;
+}
+
+.firstSection__nav {
+    width: 18.75rem;
+}
+
+.firstSection__close--nav{
+    display: none;
+}
+
+.firstSection__ul--nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.firstSection__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12.5rem;
+}
+
+h1 {
+    font-size: 3.75rem;
+    color: white;
+    margin-bottom: .625rem;
+}
+
+.firstSection__strong--h1 {
+    color: orangered;
+}
+
+.firstSection__p--main {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.firstSection__demoSongs {
+    margin-top: 3.125rem;
+    background-color: rgba(0, 0, 0, .7);
+    width: 43.75rem;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.firstSection__card--demoSong {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    border-bottom: .0625rem solid white;
+    padding: 1.25rem;
+}
+
+.firstSection__img--demoSong {
+    width: 5rem;
+    border-radius: .625rem;
+}
+
+.secondSection {
+    background-color: black;
+    color: white;
+}
+
+.secondSection__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondSection__h2--main {
+    font-size: 3.625rem;
+    font-weight: 200;
+    margin-top: 8.125rem;
+}
+
+.secondSection__strong--h2 {
+    font-weight: 600;
+    color: orangered;
+}
+
+.secondSection__span--main {
+    font-size: 20px;
+}
+
+.secondSection__demoSongs {
+    width: 100%;
+    margin-top: 5rem;
+    padding: 0 3.75rem;
+}
+
+.secondSection__card--demoSong {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 7.1875rem;
+    border-bottom: 1px solid white;
+    margin-bottom: 1.25rem;
+}
+
+.secondSection__img--demoSong {
+    width: 5rem;
+    height: 5rem;
+    border-radius: .625rem;
+}
+
+.secondSection__songTitle {
+    margin-right: 23.75rem;
+}
+
+.secondSection__songDuration {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+
+}
+
+.secondSection__footer {
+    border-radius: 51% 49% 57% 43% / 100% 100% 0% 0%;
+    background-color: black;
+    width: 80%;
+    height: 15.625rem;
+    align-self: center;
+    margin-top: 9.375rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: -4px -34px 64px 44px rgba(240, 105, 22, 0.37);
+    -moz-box-shadow: -4px -34px 64px 44px rgba(240, 105, 22, 0.37);
+    box-shadow: -4px -34px 64px 44px rgba(240, 105, 22, 0.37)
+}
+
+.secondSection__ul--footer{
+    display: flex;
+    list-style: none;
+    margin-top: 2.5rem;
+}
+
+@media screen and (max-width:25.75rem){
+
+    .firstSection__h2--header{
+      font-size: 1.25rem;
+      display: flex;
+    }
+
+    .firstSection__strong--header{
+        font-size: 1.25rem;
+    }
+
+    .firstSection__nav{
+      position: absolute;
+      top: 0;
+      right: -1.25rem;
+      bottom: 0;
+      background-color: black;
+      padding: 2rem;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    .visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .firstSection__ul--nav{
+        flex-direction: column;
+        align-items: end;
+        margin-right: 10rem;
+        gap: 1.875rem;
+    }
+
+    .firstSection__close--nav{
+        display: block;
+        background-color: transparent;
+        font-size: 2rem;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .firstSection__strong--header{
+       margin-left: .3125rem;
+    }
+
+    .firstSection__button-header{
+        position: absolute;
+    }
+
+    .firstSection__hamburguer--button{
+        display: block;
+        margin-left: 15rem;
+        cursor: pointer;
+
+    }
+
+    .firstSection{
+        background-size: cover;
+        background-position-x: -80px;
+    }
+
+    .firstSection__main{
+        margin-top: 1.5625rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    h1{
+        font-size: 1.25rem;
+    }
+
+    .firstSection__strong--h1{
+        font-size: 1.25rem;
+    }
+
+    .firstSection__p--main{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .firstSection__demoSongs {
+        margin-top: 18px;
+        width: 21.875rem;
+    }
+
+    .firstSection__card--demoSong{
+      padding: .3125rem;
+    }
+
+    .firstSection__h3--demoSong{
+        font-size: 1rem;
+    }
+
+    .firstSection__h2--songTitle{
+        font-size: 1rem;
+    }
+    
+    .firstSection__img--demoSong{
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+
+    .firstSection__h3--songTitle{
+        font-size: .75rem;
+    }
+
+    .firstSection__songDuration{
+        font-size: .625rem;
+    }
+
+    .secondSection__h2--main{
+        font-size: 1.25rem;
+        margin-top: 2.5rem;
+    }
+
+    .secondSection__span--main{
+        font-size: .75rem;
+        padding: 3.125rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    .secondSection__demoSongs{
+        padding: 0 1.875rem;
+    }
+
+    .secondSection__songTitle{
+        margin-right: 5rem;
+        font-size: .75rem;
+    }
+
+    .secondSection__img--demoSong{
+       width: 2.5rem;
+       height: 2.5rem;
+    }
+
+    .secondSection__footer{
+      height: 9.375rem; 
+    }
+
+    .secondSection__ul--footer{
+        margin-top: 1.25rem;
+    }
+
+    .secondSection__h2--songTitle{
+        width: 12.5rem;
+    }
+}
